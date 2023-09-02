@@ -1,0 +1,4 @@
+Public address - http://54.255.209.2/
+
+Link for deploy.yml – https://github.com/dinukapeter/ds-exam/blob/main/.github/workflows/deploy.yml
+Link for ecs-task-definition.jason – https://github.com/dinukapeter/ds-exam/blob/main/.aws/ecs-task-definition.json

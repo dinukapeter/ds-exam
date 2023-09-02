@@ -10,9 +10,9 @@ env:
   ECS_SERVICE: ds-nodejsapp-service
   ECS_CLUSTER: ds-nodejsapp-cluster
   ECS_TASK_DEFINITION: .aws/ecs-task-definition.json
-                                               # file, e.g. .aws/task-definition.json
+                                               
   CONTAINER_NAME: ds-nodejsapp-container-1
-                                               # containerDefinitions section of your task definition
+                                              
 
 permissions:
   contents: read
@@ -37,7 +37,7 @@ jobs:
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
-
+S
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:

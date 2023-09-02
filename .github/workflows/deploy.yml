@@ -5,13 +5,13 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: ap-southeast-1                # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: ds-nodejsapp           # set this to your Amazon ECR repository name
-  ECS_SERVICE: ds-nodejsapp-service               # set this to your Amazon ECS service name
-  ECS_CLUSTER: ds-nodejsapp-cluster                 # Set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: .aws/ecs-task-definition.json # set this to the path to your Amazon ECS task definition
+  AWS_REGION: ap-southeast-1
+  ECR_REPOSITORY: ds-nodejsapp     
+  ECS_SERVICE: ds-nodejsapp-service
+  ECS_CLUSTER: ds-nodejsapp-cluster
+  ECS_TASK_DEFINITION: .aws/ecs-task-definition.json
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: nodejsappcontainer           # set this to the name of the container in the
+  CONTAINER_NAME: ds-nodejsapp-container-1
                                                # containerDefinitions section of your task definition
 
 permissions:
